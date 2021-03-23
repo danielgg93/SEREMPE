@@ -1,0 +1,8 @@
+<ng-container>
+  <div class="app-container">
+    <app-header></app-header>
+    <app-product-info (onSelectedCoverage)="coverageSelected($event)">
+    </app-product-info>
+  </div>
+  <app-footer [total]="total"></app-footer>
+</ng-container>

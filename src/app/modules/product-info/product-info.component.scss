@@ -1,0 +1,11 @@
+@import '../../../scss/styles.scss';
+
+.flex-container{
+    @include flex();
+    width: 100%;
+
+    .flex-item{
+        width: 50%;
+    }
+}
+

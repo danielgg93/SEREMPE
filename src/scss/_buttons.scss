@@ -1,0 +1,27 @@
+@import './colors';
+@import './variables';
+%button-primary {
+    background: $blue;
+    color: $white;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+    height: 113px;
+    width: 56px;
+  
+    &:disabled, &.disabled {
+      background: var(--disabled);
+      color: var(--blue);
+    }
+  
+    .loading-wheel {
+      background-color: rgba(var(--primary-rgb), 0.3);
+      cursor: not-allowed;
+    }
+  }
+  
+  .button-primary {
+    @extend %button-primary;
+  }

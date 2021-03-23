@@ -1,0 +1,35 @@
+@import '../../../../../scss/styles.scss';
+
+.product-image-container {
+  @include flex(center, center, column);
+
+  .image-preview {
+    width: 328px;
+    height: 328px;
+    object-fit: contain;
+  }
+  .image-list {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+
+  .list {
+    @include flex();
+
+    .card-properties {
+      margin: 16px;
+
+      &:first-child {
+        background-color: red;
+      }
+      &:last-child {
+        background-color: green;
+      }
+    }
+  }
+  .list-icon {
+    @include flex();
+    padding: 76px;
+  }
+}

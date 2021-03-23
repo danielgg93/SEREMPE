@@ -1,0 +1,24 @@
+<div class="product-image-container">
+  <div>
+    <app-card [isCardPreview]="true">
+      <img class="image-preview" [src]="images[imageSelected].url" />
+    </app-card>
+  </div>
+  <div class="list">
+    <div *ngFor="let image of images; let i = index">
+      <div class="card-properties">
+        <app-card [isCardCarrousel]="true" (click)="imageSelector(i)">
+          <img class="image-list" src="{{ image.url }}" />
+        </app-card>
+      </div>
+    </div>
+  </div>
+  <div class="list-icon">
+    <div *ngFor="let icon of icons">
+      <app-icon-text
+        [imageIconUrl]="icon.url"
+        [textIcon]="icon.description"
+      ></app-icon-text>
+    </div>
+  </div>
+</div>

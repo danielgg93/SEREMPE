@@ -1,0 +1,22 @@
+@import '../../../scss/styles.scss';
+
+.nav-tabs {
+  @include flex(center);
+  list-style-type: none;
+  padding: 0px;
+
+  .nav-item{
+      padding: 0px 24px;
+      &:first-child{
+          padding-left: 0px;
+      }
+      .link{
+          text-decoration: none;
+          color: $gray-2;
+         
+      }
+      a:active {
+        color: red;
+      }
+  }
+}

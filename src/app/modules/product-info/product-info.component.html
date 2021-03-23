@@ -1,0 +1,60 @@
+<div class="flex-container">
+  <div class="flex-item">
+    <app-product-image [images]="images" [icons]="icons"> </app-product-image>
+  </div>
+  <div class="flex-item">
+    <div>
+      <h5>NEW RELASE</h5>
+      <h1>MOMENTUM True Wireless 2</h1>
+      <h2>Earbuds that put sound first</h2>
+      <h5>STARTING AT</h5>
+      <h1>$295.50</h1>
+    </div>
+    <app-tabs>
+      <app-tab [tabTitle]="'Overview'">
+        <h1>Overview</h1>
+        For the past 75 years, Sennheiser has put sound first. The new MOMENTUM
+        True Wireless 2 is no different. Thanks to leading audio technology and
+        innovation, these new earbuds deliver the best listening experience
+        anytime, anywhere. With improved ergonomics designed for full day
+        wearing and refined touch controls for a more personalised experience,
+        they have been finely crafted for the most discerning listener and aim
+        to simplify your life by enhancing your everyday.
+      </app-tab>
+      <app-tab tabTitle="Features">
+        <app-product-features></app-product-features>
+      </app-tab>
+      <app-tab tabTitle="What's in the box?">
+        <app-product-specifications></app-product-specifications>
+      </app-tab>
+    </app-tabs>
+    <h1>Choose your finish</h1>
+    <div class="flex-container">
+      <app-card class="flex-item">
+        <h3>Ivory White</h3>
+        <p>
+          For the past 75 years, Sennheiser has put sound first. The new
+          MOMENTUM True.
+        </p>
+      </app-card>
+      <app-card class="flex-item">
+        <h3>Matte Black</h3>
+        <p>
+          Of all of the celestial bodies that capture our attention and
+          fascination as astronomers.
+        </p>
+      </app-card>
+    </div>
+    <h1>Would you like to add extended warranty coverage?.</h1>
+    <div>
+      <app-card (click)="selectedCoverage(0)">
+        <h3>2 years coverage</h3>
+        <p>For the past 75 years, Sennheiser has put sound first.</p>
+      </app-card>
+      <app-card (click)="selectedCoverage(75)">
+        <h3>3 years coverage</h3>
+        <p>For the past 75 years, Sennheiser has put sound first.</p>
+      </app-card>
+    </div>
+  </div>
+</div>

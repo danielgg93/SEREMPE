@@ -1,0 +1,30 @@
+@import '../../../scss/styles.scss';
+
+.footer-container {
+  @include flex();
+  background-color: $gray-3;
+  height: 152px;
+  padding: 40px 106px 40px 112px;
+  .grid {
+    display: flex;
+    .grid-1 {
+      height: 72px;
+      width: 280px;
+    }
+    .spacing {
+      margin-left: 32px;
+    }
+
+    .grid-2 {
+      @include flex(center, flex-end);
+
+      > div {
+        margin-right: 32px;
+      }
+    }
+    .button-primary {
+      width: 113px;
+      height: 56px;
+    }
+  }
+}

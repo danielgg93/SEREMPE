@@ -1,0 +1,17 @@
+@import '../../../scss/styles.scss';
+
+.icon-preview {
+  @include flex(center, center, column);
+  //width: 191px;
+  height: 63px;
+  /*&:first-child {
+    padding-left: 26px;
+  }
+  &:last-child {
+    padding-right: 26px;
+  }*/
+  .icon-image {
+    width: 22px;
+    height: 27px;
+  }
+}
